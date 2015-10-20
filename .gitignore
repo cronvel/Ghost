@@ -7,9 +7,13 @@ b-cov
 *.pid
 *.gz
 
+*.local.*
+
 pids
 logs
 results
+
+content/
 
 npm-debug.log
 node_modules

@@ -16,6 +16,9 @@ errors = require('./core/server/errors');
 // Create our parent express app instance.
 parentApp = express();
 
+// Load custom extensions
+require( './extensions/extensions.js' ) ;
+
 // Call Ghost to get an instance of GhostServer
 ghost().then(function (ghostServer) {
     // Mount our Ghost instance on our desired subdirectory path if it exists.
